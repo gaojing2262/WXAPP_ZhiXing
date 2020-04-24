@@ -1,0 +1,55 @@
+<!--miniprogram/pages/tickets/tickets.wxml-->
+<view class="top">
+  <view class="front" bindtap="prev">前一天</view>
+  <view class="middle">{{currentDate}}{{week}}</view>
+  <view class="last" bindtap="next">后一天</view>
+</view>
+
+<block wx:for="{{flight}}" wx:key="{{item}}">
+  <view class="item">
+    <view class="content ">
+
+      <view class="List_1 ">
+        <view class="column ">
+          <view class="time ">{{item.srcTime}}</view>
+          <view class="color_1 srcD ">{{item.srcPlane}}</view>
+        </view>
+
+        <view class="column ">
+          <view class="zhifei color_1 ">直飞</view>
+          <view class="zhifei color_1 ">——></view>
+          <view class="zhifei color_1 ">{{item.flyTime}}</view>
+        </view>
+
+        <view class="column ">
+          <view class="time ">{{item.desTime}}</view>
+          <view class="color_1 srcD ">{{item.desPlane}}</view>
+        </view>
+
+        <view class="column ">
+          <view class="color_2 ">￥285起</view>
+          <view class="color_1 srcD ">2.3折</view>
+        </view>
+      </view>
+
+      <view class="icon ">
+        <image src="../images/logo/icon.jpg " mode="widthFix " style="width:20px;height:18px "></image>
+        <view class="hk ">{{item.airPlane}} {{item.airNo}} | {{item.airType}}</view>
+        <view class="hk2">准点率:{{item.airTimeRight}} {{item.km}}km</view>
+
+      </view>
+
+    </view>
+  </view>
+
+</block>
+<view>
+  <view class="bottom">
+    <view class="bottomc">
+      <view class="bottom_1"> 筛选 |</view>
+      <view class="bottom_1"> 出发时间 |</view>
+      <view class="bottom_1"> 旅行时间 |</view>
+      <view class="bottom_1"> 显示价格 </view>
+    </view>
+  </view>
+</view>

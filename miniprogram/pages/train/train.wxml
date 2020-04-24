@@ -1,0 +1,100 @@
+<!--miniprogram/pages/train/train.wxml-->
+<view class="content">
+  <view class="header" style="height:80px;">
+    <swiper style="height:100%" indicator-dots="true" autoplay='true' interval='3000'>
+      <block wx:for="{{swipers}}" wx:key="{{item}}">
+        <swiper-item>
+          <image src="{{item.url}}" mode="widthFix" style="width:100%"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="searchbar">
+    <view id="1" class="{{currentId == 1? 'selected' : 'unselected'}}" bindtap="switchChange">火车票</view>
+    <view id="2" class="{{currentId == 2? 'selected' : 'unselected'}}" bindtap="switchChange">飞机票</view>
+  </view>
+
+  <view class="place">
+    <view class="weui-cell__bd heb">
+      <picker bindchange="bindSrcCityChange" value="{{srcCityIndex}}" range="{{cities}}" range-key="name">
+        <view class="weui-select weui-select_in-select-after">{{cities[srcCityIndex].name}}</view>
+      </picker>
+    </view>
+
+    <view class="ima">
+      <image src="../images/icon/hcp/xz.jpg" style="width:45px;height:45px" mode="widthFix" bindtap="switchCity"></image>
+    </view>
+
+
+    <view class="weui-cell__bd bj">
+      <picker bindchange="bindDesCityChange" value="{{desCityIndex}}" range="{{cities}}" range-key="name">
+        <view class="weui-select weui-select_in-select-after">{{cities[desCityIndex].name}}</view>
+      </picker>
+    </view>
+
+  </view>
+
+  <view class="go">
+    <view class="weui-cell__bd date">
+      <picker mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChange">
+        <view class="weui-input">{{date}}</view>
+      </picker>
+    </view>
+
+    <view class="day">
+
+      <view class="weui-input" bindchange="bindDateChange">{{week}}</view>
+
+    </view>
+    <view class="qj">
+      <image src="../images/icon/hcp/qj.png" style="width:24px;height:24px" mode="widthFix"></image>
+    </view>
+  </view>
+
+
+  <view class="type">
+    <view class="gt">高铁动车</view>
+    <view class="weui-cell__ft">
+      <switch checked color="#26a2ff" />
+    </view>
+    <view class="xs">学生票</view>
+    <view class="weui-cell__ft">
+      <switch checked color="#26a2ff" />
+    </view>
+  </view>
+
+  <view class="query">
+    <button class="cx" bindtap="Select">查询</button>
+  </view>
+
+  <view class="other">
+    <view class="ls">佳木斯→北京</view>
+    <view class="ls">清除历史</view>
+  </view>
+
+  <view class="cy">
+    <image src="../images/icon/hcp/cy.jpg" style="width:30px;height:17px;margin-left:35px" mode="widthFix"> </image>
+  </view>
+  <view class="fw">
+    <view class="qp">
+      <image src="../images/icon/hcp/jsqp.jpg" style="width:40px;height:40px" mode="widthFix"></image>
+    </view>
+    <view class="xz">
+      <image src="../images/icon/hcp/zxxz.jpg" style="width:40px;height:40px" mode="widthFix"></image>
+    </view>
+    <view class="hh">
+      <image src="../images/icon/hcp/qshh.jpg" style="width:40px;height:40px" mode="widthFix"></image>
+    </view>
+    <view class="jd">
+      <image src="../images/icon/hcp/czjd.jpg" style="width:40px;height:40px" mode="widthFix"></image>
+    </view>
+  </view>
+</view>
+
+<view class="fw-2">
+  <view class="qb-2">极速抢票</view>
+  <view class="qb-2">在线选座</view>
+  <view class="qb-2">抢手号货</view>
+  <view class="qb-2">超值酒店</view>
+</view>

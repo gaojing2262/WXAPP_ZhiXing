@@ -1,0 +1,213 @@
+/* miniprogram/pages/train/train.wxss */
+
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: -20px;
+  margin-left: 14px;
+  width: 90%;
+  height: 40px;
+  border-radius: 0.5em 0.5em 0 0;
+  opacity: 0.7;
+  background: #696969;
+}
+
+.selected {
+  color: #000;
+  background: #fff;
+  width: 40%;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+  opacity: 1;
+}
+
+.unselected {
+  color: #fff;
+  background: #696969;
+  width: 40%;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+}
+
+.place {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.heb {
+  padding-top: 12px;
+  width: 30%;
+  height: 50px;
+  text-align: center;
+  color: #000;
+  margin: 10 auto;
+  font-weight: bold;
+}
+
+.ima {
+  margin-left: 30px;
+  margin-top: 15px;
+  width: 30%;
+}
+
+.bj {
+  padding-top: 12px;
+  width: 30%;
+  height: 50px;
+  text-align: center;
+  color: #000;
+  margin: 10 auto;
+  font-weight: bold;
+}
+
+.go {
+  width: 90%;
+  height: 45px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.date {
+  padding-top: 12px;
+  width: 40%;
+  height: 45px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.day {
+  padding-top: 12px;
+  width: 60%;
+  height: 45px;
+  text-align: right;
+  margin: 0 auto;
+  color: #1e90ff;
+}
+
+.qj {
+  padding-top: 12px;
+  width: 7%;
+  margin: 0 auto;
+}
+
+.type {
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.gt {
+  padding-top: 6px;
+  width: 30%;
+  height: 45px;
+  text-align: left;
+  margin-left: 0px;
+  margin: 0 auto;
+}
+
+.xs {
+  padding-top: 6px;
+  width: 20%;
+  height: 45px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.query {
+  width: 85%;
+  height: 45px;
+  background: #1e90ff;
+  margin: 0 auto;
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.cx {
+  color: #fff;
+  padding-top: 0px;
+}
+
+.other {
+  width: 90%;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.ls{
+  width: 45%;
+  color: #696969;
+  font-size: 13px;
+  margin: 3px 20px;
+  text-align: center
+
+}
+
+.cy {
+  width: 90%;
+  margin: -2px auto;
+  height: 25px;
+}
+
+.fw {
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.qp {
+  width: 25%;
+  height: 45px;
+  margin-left: 15px;
+}
+
+.xz {
+  width: 25%;
+  height: 45px;
+  margin-left: 20px;
+}
+
+.hh {
+  width: 25%;
+  height: 45px;
+  margin-left: 20px;
+}
+
+.jd {
+  width: 25%;
+  height: 45px;
+  margin-left: 20px;
+}
+
+.fw-2 {
+  width: 90%;
+  height: 10px;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.qb-2 {
+  width: 25%;
+  height: 10px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+}
+.weui-cell__ft{
+  zoom: 0.7;
+  margin: 9px auto
+}

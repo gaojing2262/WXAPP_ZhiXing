@@ -1,0 +1,139 @@
+/* miniprogram/pages/tickets/tickets.wxss */
+
+.top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 70rpx;
+  background: #1e90ff;
+  margin: 0 auto;
+}
+
+.front {
+  text-align: center;
+  color: #fff;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.middle {
+  text-align: center;
+  color: #fff;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.last {
+  text-align: center;
+  color: #fff;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.content {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  border-bottom: 1px solid #bebebe;
+}
+
+.List_1 {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-left: 6px;
+}
+
+.column {
+  width: 30%;
+  height: 200px;
+  margin: 5px 3px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.column_2 {
+  width: 40%;
+  height: 200px;
+}
+
+.time {
+  font-weight: bold;
+}
+
+.color_1 {
+  color: #696969;
+}
+
+.srcD {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.zhifei {
+  font-size: 12px;
+  text-align: center;
+}
+
+.color_2 {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  width: 100%;
+  margin-left: 5px;
+}
+
+.hk {
+  margin-left: 0px;
+  font-size: 12px;
+  color: #bebebe;
+}
+
+.hk2 {
+  width: 40%;
+  height: 20px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+.qp {
+  text-align: right;
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 60px;
+}
+
+.bottom {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.bottomc {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom_1 {
+  height: 35px;
+  font-size: 15px;
+  width: 25%;
+  margin: 1px auto;
+}
